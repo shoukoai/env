@@ -1,0 +1,21 @@
+
+# Replace the "❯" symbol in the prompt with "➜"
+#[character]                            # The name of the module we are configuring is "character"
+#success_symbol = "[\\$](bold green)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+[username]
+style_user = "white bold"
+style_root = "black bold"
+format = "[$user]($style) "
+disabled = false
+show_always = true
+
+[directory]
+truncation_length = 2
+truncate_to_repo = true
+format = "[🌳 ](bold white)[$path](bold #dfffdf)[ ](white)"
+#format = "[⬢ ](bold blue)[$path](bold green)[ ](white)"
